@@ -1,3 +1,11 @@
 body {
   font-family: 
 }
+.options{ /*choices-diplay */
+  display: grid;
+  margin-bottom: 2 rem; 
+}
+.restart-button {
+  color: #FFFF00;
+  background: #000000;
+}
