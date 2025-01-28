@@ -1,11 +1,47 @@
 body {
   font-family: 
 }
+
+.container{ /*container*/
+
+}
+.game-display{/*game-card*/
+
+}
+
+.points{/*score */
+
+}
+.view-points{/*score-display */
+
+}
+
+.header{
+
+}
 .options{ /*choices-diplay */
   display: grid;
   margin-bottom: 2 rem; 
+}
+
+.boxSelection{ /*choices-box */
+
+}
+.choice-icon{
+
+}
+.result{ /*result */
+
 }
 .restart-button {
   color: #FFFF00;
   background: #000000;
 }
+
+.button-options{ /* choice-btn */
+
+}
+.confirm-button{ /*buttons */
+
+}
+
