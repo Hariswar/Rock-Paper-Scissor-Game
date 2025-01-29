@@ -7,85 +7,99 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <h1>Rock Paper Scissors Game</h1>
-      <div class="container">
-        <div class="game-display">
-          <div class="points">
-            <div class="view-points">
-              <svg
-                class="winning-symbol"
-                width="26"
-                height="26"
-                fill="none"
-                stroke="#FFFF00"
-                stroke-width="2"
-                stroke-linejoin="round"
-                stroke-linecap="round"
-              >
-                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
-                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
-                <path d="M4 22h16" />
-                <path
-                  d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"
-                />
-                <path
-                  d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"
-                />
-                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
-              </svg>
-              <span
-                >Player (YOU): <span id="PlayerPoints">0</span> Computer (CPU):
-                <span id="ComputerPoints">0</span></span
-              >
-            </div>
+    </header>
+
+    <main class="container">
+      <section class="game-display">
+        <div class="points">
+          <div class="view-points">
+            <svg
+              class="winning-symbol"
+              width="26"
+              height="26"
+              fill="none"
+              stroke="#FFFF00"
+              stroke-width="2"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+            >
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+              <path d="M4 22h16" />
+              <path
+                d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"
+              />
+              <path
+                d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"
+              />
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+            </svg>
+            <span
+              >Player (YOU): <span id="PlayerPoints">0</span> Computer (CPU):
+              <span id="ComputerPoints">0</span></span
+            >
           </div>
         </div>
-        <button id="restartbutton" class="restart-button">
-          <svg
-            width="25"
-            height="25"
-            fill="none"
-            stroke="#FFFF00"
-            stroke-width="2"
-            stroke-linejoin="round"
-            stroke-linecap="round"
-          >
-            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-            <path d="M3 3v5h5" />
-          </svg>
-        </button>
+      </section>
 
-        <div class="options">
-          <div class="boxSelection">
-            <h2>Player Choice</h2>
-            <div id="userChoice" class="choice-icon"></div>
-          </div>
-          <div class="boxSelection">
-            <h2>Computer Choice</h2>
-            <div id="computerChoice" class="choice-icon"></div>
-          </div>
+      <button
+        id="restartbutton"
+        class="restart-button"
+        aria-label="Restart Game"
+      >
+        <svg
+          width="25"
+          height="25"
+          fill="none"
+          stroke="#FFFF00"
+          stroke-width="2"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+        >
+          <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+          <path d="M3 3v5h5" />
+        </svg>
+      </button>
+
+      <section class="options">
+        <div class="boxSelection">
+          <h2>Player Choice</h2>
+          <div id="userChoice" class="choice-icon" aria-live="polite"></div>
         </div>
-      </div>
+        <div class="boxSelection">
+          <h2>Computer Choice</h2>
+          <div id="computerChoice" class="choice-icon" aria-live="polite"></div>
+        </div>
+      </section>
 
-      <div id="result" class="result"></div>
+      <div id="result" class="result" aria-live="polite"></div>
 
-      <div class="confirm-button">
-        <button class="button-options" data-choice="rock">
+      <div class="confirm-buttons">
+        <button
+          class="button-options"
+          data-choice="rock"
+          aria-label="Choose Rock"
+        >
           <span>Rock</span>
         </button>
-      </div>
-      <div class="confirm-button">
-        <button class="button-options" data-choice="paper">
+        <button
+          class="button-options"
+          data-choice="paper"
+          aria-label="Choose Paper"
+        >
           <span>Paper</span>
         </button>
-      </div>
-      <div class="confirm-button">
-        <button class="button-options" data-choice="scissors">
+        <button
+          class="button-options"
+          data-choice="scissors"
+          aria-label="Choose Scissors"
+        >
           <span>Scissors</span>
         </button>
       </div>
-    </div>
+    </main>
 
     <script src="script.js"></script>
   </body>
